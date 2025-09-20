@@ -12,7 +12,7 @@ else
 fi
 
 # Monta a mensagem de log
-MENSAGEM_LOG="Análise do sistema concluída em $(date) pelo usuario $USER"
+MENSAGEM_LOG="Análise do sistema concluída em $(date)"
 
 # Se o MODO_DEBUG estiver ativado no .conf, mostra uma mensagem extra na tela
 if [ "$MODO_DEBUG" = "true" ]; then
