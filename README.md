@@ -22,15 +22,27 @@ A estrutura final pode ser visualizada com o comando `tree`, demonstrando a corr
 
 **fhs_simulado**
 |___________etc
+
      |_____infosis.conf
+
 |___________usr
+
      |_____local
+
         |_____bin
+
            |_____infosis
+
         |_____share
+
            |_____man
+
               |_____man1
+
                  |_____infosis.1
+
 |___________var 
+
 |___________log
+
 
