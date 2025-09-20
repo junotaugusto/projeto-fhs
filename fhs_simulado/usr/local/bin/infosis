@@ -1,2 +1,25 @@
 #!/bin/bash
-echo "'Analise de sistema concluida em $(date)'"
+
+# Define o caminho padrão para o arquivo de configuração
+CONFIG_FILE="/home/jap/projeto-fhs/fhs_simulado/etc/infosis.conf"
+
+# Verifica se o arquivo de configuração existe e o carrega
+if [ -f "$CONFIG_FILE" ]; then
+  source "$CONFIG_FILE"
+else
+  echo "Erro: Arquivo de configuração não encontrado em $CONFIG_FILE"
+  exit 1
+fi
+
+# Monta a mensagem de log
+MENSAGEM_LOG="Análise do sistema concluída em $(date) pelo usuario $USER"
+
+# Se o MODO_DEBUG estiver ativado no .conf, mostra uma mensagem extra na tela
+if [ "$MODO_DEBUG" = "true" ]; then
+  echo "MODO DEBUG ATIVADO: Apenas exibindo na tela."
+  echo "$MENSAGEM_LOG"
+else
+  # Do contrário, grava a mensagem no arquivo de log definido no .conf
+  echo "$MENSAGEM_LOG" >> "$DIRETORIO_SAIDA/infosis.log"
+  echo "Relatório de análise gravado em $DIRETORIO_SAIDA/infosis.log"
+fi
