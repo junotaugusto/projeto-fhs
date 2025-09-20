@@ -1,4 +1,4 @@
-#Mini-Projeto Linux sobre FHS (Filsysteme Hierarchy Standard)
+# Mini-Projeto Linux sobre FHS (Filsysteme Hierarchy Standard)
 
 Este repositorio documenta um exercicio pratico para entender a organizacao de arquivos no Linux de acordo com o **FHS**.
 
