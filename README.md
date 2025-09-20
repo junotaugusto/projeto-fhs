@@ -20,7 +20,7 @@ Os arquivos da aplicacao foram movidos para seus locais corretos dentro desta es
 
 A estrutura final pode ser visualizada com o comando `tree`, demonstrando a correta aplicacao dos conceitos de FHS:
 
-fhs_simulado
+**fhs_simulado**
 |___________etc
      |_____infosis.conf
 |___________usr
