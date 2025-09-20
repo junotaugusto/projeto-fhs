@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "'Analise de sistema concluida em $(date)'"
